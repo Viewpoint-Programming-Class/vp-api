@@ -1,1 +1,1 @@
-{"customers":[{"name":"TLV","id":1},{"name":"x","id":2},{"name":"y","id":2}],"companies":[{"name":"Op","id":1},{"name":"Amzon","id":2}]}
+{"customers":[{"name":"TLV","id":1},{"name":"x","id":2},{"name":"y","id":2}],"companies":[{"name":"Op","id":1},{"name":"Amzon","id":2}],"reminders":[{"year":5783,"month":9,"day":25,"title":"First Night","reminder":"Please Remember to light the Candles","isFuture":true,"id":1},{"time":"18:00","year":"5783","month":"2","day":"27","title":"Light Candle","reminder":"Light Candle","id":2}]}

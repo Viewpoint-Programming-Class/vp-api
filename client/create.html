@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/create.css" rel="stylesheet" />
+    <script type="text/javascript" src="./js/lib/hebcal.min.js"></script>
+    <script type="text/javascript" src="./js/create.js"></script>
+    <title>Yiddish Reminder App</title>
+</head>
+<body>
+    <p>Welcome to our Yiddish Reminder app</p>
+    <form id="reminder-form">
+        <div>
+            <label>Enter the time of the day</label>
+            <input type="time" name="time" title="Enter time of the day">
+        </div>
+        <div>
+            <label>Enter The Year</label>
+            <select name="year" id="year-input"></select>
+        </div>
+        <div>
+            <label>Enter The Month</label>
+            <select name="month" id="month-input" required>
+                <option value="" selected>Select Month</option>
+            </select>
+        </div>
+        <div>
+            <label>Enter The Day of Month</label>
+            <select name="day" id="day-input" required>
+                <option value="" selected>Select Day of Month</option>
+            </select>
+        </div>
+        <div>
+            <label>Title</label>
+            <input name="title" type="text" placeholder="Reminder Summary">
+        </div>
+        <div>
+            <label>Reminder</label>
+            <textarea name="reminder" rows="5"></textarea>
+        </div>
+
+        <div>
+            <button type="button" onclick="createReminder()">Create</button>
+        </div>
+    </form>
+</body>
+</html>

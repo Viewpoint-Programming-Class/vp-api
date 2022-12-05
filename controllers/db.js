@@ -40,7 +40,7 @@ async function create(type, obj){
 async function update(type, obj){
     let data = await get(type);
     let index = data.findIndex(({id}) => id == obj.id);
-    if(index = -1) return null;
+    if(index == -1) return null;
     data[index] = obj;
     await saveData(type, data);
     return obj;
@@ -50,8 +50,8 @@ async function update(type, obj){
 async function _delete(type, _id){
     let data = await get(type);
     let index = data.findIndex(({id}) => id == _id);
-    if(index = -1) return null;
+    if(index == -1) return null;
     data[index] = null;
     await saveData(type, data);
-    return obj;
+    return data;
 }

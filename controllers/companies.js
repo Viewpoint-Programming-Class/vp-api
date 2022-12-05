@@ -11,21 +11,21 @@ module.exports = {
 
 
 async function get(){
-    return DB.get('companies');
+    return DB.get('reminders');
 }
 
 async function create(data){
-    return DB.create('companies', data);
+    return DB.create('reminders', data);
 }
 
 async function getById(id){
-    return DB.getById('companies', id);
+    return DB.getById('reminders', id);
 }
 
 async function update(data){
-    return DB.update('companies', data);
+    return DB.update('reminders', data);
 }
 
 async function _delete(id){
-    return DB.delete('companies', id);
+    return DB.delete('reminders', id);
 }

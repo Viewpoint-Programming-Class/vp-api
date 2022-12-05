@@ -6,7 +6,7 @@ const Controller = require('../controllers/companies');
 router.get('/', async function(req, res, next){
     try{
         let data = await Controller.get();
-        res.json(data);
+        res.send(data);
     }catch(e){
         next(e);
     }

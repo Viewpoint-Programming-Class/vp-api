@@ -8,6 +8,8 @@ const date = new Date();
 
 app.use(express.json());
 
+app.use('/static', express.static('client'))
+
 app.get('/', (req, res) => {
   res.send(`Up synce ${date}`);
 })
